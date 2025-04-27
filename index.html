@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>The game "Rock Scissors Paper"</h1>
+    <button id="shown" onclick="show()">Show statistic</button>
+    <div id="containerStats">
+<h3>Statistics:</h3>
+<p class="played-as-the">Wins: 0</p>
+<p class="played-as-the">Losses: 0</p>
+<p class="played-as-the">Draws: 0</p>
+<div id="centerBtn">
+    <button id="hidden" onclick="hide()">Hide statistic</button>
+</div>
+</div>
+    </div>
+    <div id="game-container">
+        <div id="choice">
+            <img src="img/paper.png" alt="">
+            <button id="paper" onclick="playPaper()">Play as the Paper</button>
+        </div>
+        <div id="choice">
+            <img src="img/scissors.png" alt="">
+            <button id="scissors" onclick="playScissors()">Play as the Scissors</button>
+        </div>
+        <div id="choice">
+            <img src="img/rock.png" alt="">
+            <button id="rock" onclick="playRock()">Play as the Rock</button>
+        </div>
+    </div>
+    <h2 id="Result">Select the unit</h2>
+        <p id="copyright">Author: Oleg Perevalov. 2025. &copy; All rights reserved</p>
+    <script src="js/index.js"></script>
+    <script  src="js/statistic.js"></script>
+</body>
+</html>
